@@ -1,3 +1,4 @@
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
@@ -18,13 +19,19 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/favicon-32x32.png"
             ],
             "styles": [
-              "src/styles.scss"            
+              "src/styles.scss",
+              "src/assets/scss/onepage-scroll.css"           
             ],
             "scripts": [
-              "./node_modules/what-input/dist/what-input.min.js"
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/what-input/dist/what-input.min.js",
+              "src/assets/js/home-landing.js",
+              "src/assets/js/jquery.onepage-scroll.min.js",
+              "src/assets/js/jsap-animation.js"
+              
             ]
           },
           "configurations": {
@@ -73,13 +80,14 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
               "./node_modules/what-input/dist/what-input.min.js"
+
             ],
             "styles": [
               "src/styles.scss"
             ],
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/favicon-32x32.png"
             ]
           }
         },

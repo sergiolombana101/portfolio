@@ -3,23 +3,25 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { DemoComponent } from './components/demo/demo.component';
+import { ProjectsComponent } from './_layouts/projects/projects.component';
+import { HomeRoutingComponent } from './_layouts/home-routing/home-routing.component';
+import { HomeLandingComponent } from './_layouts/home-landing/home-landing.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeRoutingComponent
   },
   {
-    path: 'demo',
-    component: DemoComponent
+    path: 'home',
+    component: HomeRoutingComponent
   },
-  // Fallback Route
   {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
+    path: 'projects',
+    component: ProjectsComponent
   },
+
 ];
 
 @NgModule({

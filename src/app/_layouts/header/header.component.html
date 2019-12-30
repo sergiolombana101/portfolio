@@ -14,23 +14,31 @@
             <span class="line"></span>
             <span class="line"></span>
           </div><!-- /hamburger menu -->
-          <div class="appTitle">
-            <a routerLink="" title="{{appTitle}}">
-              {{appTitle}}
-            </a>
+          <div class="appTitle medium-4">
+            <img class="logo-img" src="../../../assets/img/logo.png" height="70vw" width="70vw">
+            <!--<a routerLink="" title="{{appTitle}}">
+              Sergio
+            </a>-->
           </div>
+
         </div><!-- /top-bar-left -->
 
         <nav class="top-bar-right hide-for-small-only">
           <ul class="menu">
             <li>
-              <a routerLink="/demo" 
+              <a onclick="redirectHome()" 
                 routerLinkActive="active"  
                 [routerLinkActiveOptions]="{ exact: true }">
-                Demo Page
+                Home
               </a>
             </li>
-            <li><a routerLink="/">Nav Link 2</a></li>
+            <li><a 
+              onclick = "redirect()"
+              routerLinkActive="active"  
+              [routerLinkActiveOptions]="{ exact: true }">
+              Projects
+              </a>
+            </li>
           </ul>
         </nav>
         
@@ -42,16 +50,19 @@
           #offcanvas="bs-offcanvas"> 
           <ul class="menu vertical">
             <li>
-              <a routerLink="/demo" 
+              <a onclick="redirectHome()"
                 routerLinkActive="active"  
                 [routerLinkActiveOptions]="{ exact: true }" 
                 (click)="offcanvas.hide()">
-                Demo Page
+                Home
               </a>
             </li>
             <li>
-              <a routerLink="/" (click)="offcanvas.hide()">
-                Nav Link 2
+              <a onclick="redirect()"
+                 routerLinkActive="active"
+                 [routerLinkActiveOptions]="{ exactt: true }" 
+                (click)="offcanvas.hide()">
+                Projects
               </a>
             </li>
           </ul>
