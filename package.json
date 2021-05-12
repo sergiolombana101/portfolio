@@ -40,7 +40,7 @@
     "@angular/router": "^7.2.4",
     "@fullpage/angular-fullpage": "0.0.14",
     "bootstrap": "^4.4.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.4",
     "foundation-sites": "6.5.3",
     "jquery": "^3.4.1",
